@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodToQu" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/greenBtn</item>
+        <item name="colorPrimaryVariant">@color/greenBtn</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+</resources>

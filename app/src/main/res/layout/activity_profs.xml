@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/splashLogo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/splashlogo"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/categoryImage"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_below="@id/splashLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/astronaut"
+                app:civ_border_color="@color/greenBtn"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/categoryImage"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/bungee"
+                android:text="Hello Food Buddy"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/username2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop='5dp'
+                android:fontFamily="@font/bungee"
+                android:text="User's Name"
+                android:textSize="20sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@id/card"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop='5dp'
+                android:layout_marginBottom="15dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/age"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Age:"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Gender:"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Name:"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+         <Button
+             android:id="@+id/update_btn"
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/card"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"
+             android:layout_marginBottom="20dp"
+             android:text="Update"
+             android:textColor="@color/black"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_nav"
+        app:elevation="10dp"
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@android:color/black"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu2" />
+
+</RelativeLayout>

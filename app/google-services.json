@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "750625919794",
+    "firebase_url": "https://food-to-qu-51943-default-rtdb.firebaseio.com",
+    "project_id": "food-to-qu-51943",
+    "storage_bucket": "food-to-qu-51943.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750625919794:android:ad021fdd21d5f0147e7d2b",
+        "android_client_info": {
+          "package_name": "com.example.foodtoqu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750625919794-7bopgoqj2h2gmjmif7achhacnm50bs0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANXHnv9_NttWeEFXNzYlwxDZcQ8AJwGvc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750625919794-7bopgoqj2h2gmjmif7achhacnm50bs0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

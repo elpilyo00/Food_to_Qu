@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodToQu" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your light theme here. -->
+         <item name="colorPrimary">@color/greenBtn</item>
+         <item name="colorPrimaryVariant">@color/greenBtn</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+    
+    <style name="roundImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Theme.FoodToQu" parent="Base.Theme.FoodToQu" />
+
+    <style name="SmallerRatingBar">
+        <item name="android:scaleX">0.6</item>
+        <item name="android:scaleY">0.6</item>
+    </style>
+
+    <style name="CustomRatingBar">
+        <item name="colorControlActivated">#E3F812</item>
+    </style>
+
+</resources>

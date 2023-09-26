@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <bitmap
+            android:src="@drawable/ic_baseline_star_24"
+            android:tint="?android:attr/textColorSecondary" />
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <bitmap
+            android:src="@drawable/ic_baseline_star_24"
+            android:tint="?android:attr/textColorSecondary" />
+    </item>
+    <item android:id="@android:id/progress">
+        <bitmap
+            android:src="@drawable/ic_baseline_star_25"
+            android:tint="?attr/colorAccent" />
+    </item>
+</layer-list>

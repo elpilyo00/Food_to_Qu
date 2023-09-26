@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LikedFoodsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+ <androidx.core.widget.NestedScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:layout_above="@+id/bottom_navigation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/splashLogo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/splashlogo"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/splashLogo" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/splashLogo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bar_chart"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/greenBtn"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Favorite foods"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/arbutus"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/splashLogo2"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="false"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+ </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabs23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/ic_baseline_refresh_24"
+            app:backgroundTint="#D6CFD2" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/home_nav"
+            app:elevation="10dp"
+            app:itemIconTint="@android:color/black"
+            app:itemTextColor="@android:color/black"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu2" />
+    </RelativeLayout>
+</RelativeLayout>

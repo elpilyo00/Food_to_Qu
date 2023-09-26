@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/splashLogo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/splashlogo"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/categoryImage"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@id/splashLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/astronaut"
+        app:civ_border_color="@color/greenBtn"
+        app:civ_border_width="2dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/filterBtn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryImage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_button_beige"
+        android:drawableStart="@drawable/list"
+        android:fontFamily="@font/bungee"
+        android:onClick="showFilterTapped"
+        android:text="Filter"
+        android:textColor="@color/white" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/filterTab"
+            android:layout_width="match_parent"
+            android:layout_height="470dp"
+            android:layout_below="@id/filterBtn"
+            android:layout_marginTop="5dp"
+            android:background="@color/black">
+
+            <LinearLayout
+                android:id="@+id/mood"
+                android:layout_width="270dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/filter_container"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bungee"
+                    android:text="Mood"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/happy"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Happy"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/sad"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Sad"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/excited"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Excited"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/angry"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Angry"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/stress"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Stress"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/nostalgia"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Nostalgia"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/inLove"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="In Love"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/calm"
+                        android:layout_width="90dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Calm"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/healthCondition"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_below="@id/mood"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/filter_container"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bungee"
+                    android:text="Health Condition"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/diabetes"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Diabetes"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/gastrointestinal"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Gastrointestinal Disorder"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/bowel"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Irritable Bowel Syndrome"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/highBlood"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="High Blood Pressure"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/weight"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Weight Management"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/anemia"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Anemia"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/highCholesterol"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="High Cholesterol"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/heartDisease"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Heart Disease"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/osteoporosis"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Osteoporosis"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/celiac"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Celiac Disease"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/renal"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Renal Disease"
+                        android:textSize="12sp" />
+
+                    <CheckBox
+                        android:id="@+id/hypothyroidism"
+                        android:layout_width="180dp"
+                        android:layout_height="30dp"
+                        android:button="@drawable/checkbox"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="5dp"
+                        android:text="Hypothyroidism"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recommendBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterTab"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/bungee"
+        android:text="Recommend"
+        android:textSize="18sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/recommendBtn"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="vertical" />
+
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/home_nav"
+        app:elevation="10dp"
+        app:itemIconTint="@android:color/black"
+        app:itemTextColor="@android:color/black"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu2" />
+</RelativeLayout>

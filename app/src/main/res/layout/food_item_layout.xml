@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="370dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="150dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/background"
+        app:cardBackgroundColor="#F6F4EB"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#191717">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/categoryImage"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/uploading"
+                app:civ_border_color="@color/greenBtn"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/foodNameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/categoryImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="Category Name 1"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/calorieTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/foodNameTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Category Name 2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <!-- Material Rating Bar -->
+            <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                android:id="@+id/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calorieTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="-100dp"
+                android:layout_marginTop="8dp"
+                android:scaleX="0.4"
+                android:scaleY="0.4" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/starRatingBar"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="3.1"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <ImageButton
+                android:id="@+id/heartButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_thumb_up_alt_25" />
+
+            <TextView
+                android:id="@+id/likes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heartButton"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

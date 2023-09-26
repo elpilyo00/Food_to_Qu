@@ -1,0 +1,43 @@
+Index: app/build/generated/res/google-services/debug/values/values.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build/generated/res/google-services/debug/values/values.xml b/app/build/generated/res/google-services/debug/values/values.xml
+new file mode 100644
+--- /dev/null	(date 1694764270034)
++++ b/app/build/generated/res/google-services/debug/values/values.xml	(date 1694764270034)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="utf-8"?>
++<resources>
++    <string name="default_web_client_id" translatable="false">750625919794-7bopgoqj2h2gmjmif7achhacnm50bs0r.apps.googleusercontent.com</string>
++    <string name="firebase_database_url" translatable="false">https://food-to-qu-51943-default-rtdb.firebaseio.com</string>
++    <string name="gcm_defaultSenderId" translatable="false">750625919794</string>
++    <string name="google_api_key" translatable="false">AIzaSyANXHnv9_NttWeEFXNzYlwxDZcQ8AJwGvc</string>
++    <string name="google_app_id" translatable="false">1:750625919794:android:ad021fdd21d5f0147e7d2b</string>
++    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyANXHnv9_NttWeEFXNzYlwxDZcQ8AJwGvc</string>
++    <string name="google_storage_bucket" translatable="false">food-to-qu-51943.appspot.com</string>
++    <string name="project_id" translatable="false">food-to-qu-51943</string>
++</resources>
+Index: app/build/generated/source/buildConfig/debug/com/example/foodtoqu/BuildConfig.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build/generated/source/buildConfig/debug/com/example/foodtoqu/BuildConfig.java b/app/build/generated/source/buildConfig/debug/com/example/foodtoqu/BuildConfig.java
+new file mode 100644
+--- /dev/null	(date 1694764298814)
++++ b/app/build/generated/source/buildConfig/debug/com/example/foodtoqu/BuildConfig.java	(date 1694764298814)
+@@ -0,0 +1,12 @@
++/**
++ * Automatically generated file. DO NOT MODIFY
++ */
++package com.example.foodtoqu;
++
++public final class BuildConfig {
++  public static final boolean DEBUG = Boolean.parseBoolean("true");
++  public static final String APPLICATION_ID = "com.example.foodtoqu";
++  public static final String BUILD_TYPE = "debug";
++  public static final int VERSION_CODE = 1;
++  public static final String VERSION_NAME = "1.0";
++}

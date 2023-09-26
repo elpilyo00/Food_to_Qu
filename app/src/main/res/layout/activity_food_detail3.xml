@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/bungee"
+                android:text="Title"
+                android:textColor="@color/black"
+                android:textSize="24sp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/detailImage"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:src="@drawable/uploading"
+                app:civ_border_color="@color/greenBtn"
+                app:civ_border_width="2dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button_black"
+                android:layout_gravity="center_horizontal">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_margin="25dp"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button_black"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Calorie: "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/detailCalorie"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Calorie"
+                        android:textColor="@color/greenBtn"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Total Fat: "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/detailFat"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Total Fat"
+                        android:textColor="@color/greenBtn"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Cholesterol: "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/detailCholesterol"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Cholesterol"
+                        android:textColor="@color/greenBtn"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Sodium: "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/detailSodium"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Sodium"
+                        android:textColor="@color/greenBtn"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Total Carbohydrate: "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/detailCarbo"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Total Carbohydrate"
+                        android:textColor="@color/greenBtn"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Total Sugar: "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/detailSugar"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Total Sugar"
+                        android:textColor="@color/greenBtn"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="180dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Protein: "
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:id="@+id/detailProtein"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:padding="20dp"
+                        android:text="Protein"
+                        android:textColor="@color/greenBtn"
+                        android:textSize="18sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="20dp"
+                android:text="Description: "
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/detailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="20dp"
+                android:text="Description"
+                android:textSize="18sp"
+                android:layout_marginBottom="20dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.github.clans.fab.FloatingActionMenu
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    app:menu_colorNormal="@color/beige"
+                    app:menu_colorPressed="@color/greenBtn"
+                    app:menu_fab_size="normal"
+                    app:menu_icon="@drawable/list"
+                    app:menu_openDirection="up"
+                    app:menu_showShadow="true">
+                    <com.github.clans.fab.FloatingActionButton
+                        android:id="@+id/back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        app:fab_colorNormal="@color/red"
+                        app:fab_showShadow="true"
+                        app:fab_size="mini" />
+
+                </com.github.clans.fab.FloatingActionMenu>
+
+
+                <TextView
+                    android:id="@+id/grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="Food Rating"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <me.zhanghai.android.materialratingbar.MaterialRatingBar
+                    android:id="@+id/starRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grade"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:isIndicator="true"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4" />
+
+                <TextView
+                    android:id="@+id/ratenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/starRatingBar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="3.5"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Food to Qu</string>
+
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="health_conditions">
+        <item>Select conditions</item>
+        <item>Anemia</item>
+        <item>Celiac Disease</item>
+        <item>Diabetes</item>
+        <item>Gastrointestinal Disorder</item>
+        <item>Heart Disease</item>
+        <item>High Blood Pressure</item>
+        <item>High Cholesterol</item>
+        <item>Hypothyroidism</item>
+        <item>Irritable Bowel Syndrome</item>
+        <item>Osteoporosis</item>
+        <item>Renal Disease</item>
+        <item>Weight Management</item>
+    </string-array>
+
+
+    <string-array name="moods">
+        <item>Select moods</item>
+        <item>Angry</item>
+        <item>Calm</item>
+        <item>Excited</item>
+        <item>Happy</item>
+        <item>In Love</item>
+        <item>Nostalgia</item>
+        <item>Sad</item>
+        <item>Stress</item>
+    </string-array>
+
+
+    <string name="open">Open Navigation Drawer</string>
+    <string name="close">Close Navigation Drawer</string>
+    <string name="title_activity_food_detail3">FoodDetailActivity3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
